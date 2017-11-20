@@ -1,60 +1,78 @@
-.products {
-  display: flex;
-  flex-wrap: wrap;
+
+/*Item formatting in Carousel */
+.MultiCarousel .MultiCarousel-inner .item {
+   float: left;
+}
+
+.product-brand {
+    color: #555;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.product-name {
+    color: #000;
+    text-align: center;
+    font-size: 10px;
 }
 
 
-.product-card {
-  padding: 2%;
-  flex-grow: 1;
-  flex-basis: 16%;
-
-  display: flex; /* so child elements can use flexbox stuff too! */
+.sale-price {
+    color: #990000;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.product-card {
-  flex: 1 16%;
+.reg-price {
+    color: #555;
+    text-align: center;
+    font-size: 12px;
 }
 
-.product-image img {
-  max-width: 100%;
-}
 
-.product-info {
-	display: inline-block;
-  margin-top: auto;
-}
-
-@media (max-width: 920px) {
-  .product-card {
-    flex: 1 21%;
-  }
-}
-
-/* Select the first two */
-.products .product-card:first-child, 
-.products .product-card:nth-child(2) {
-  flex: 2 46%;
-}
-
-@media (max-width: 600px) {
-  .product-card {
-    flex: 1 46%;
-  }
-}
-
-* {
-    box-sizing: border-box;
-}
 .row::after {
     content: "";
     clear: both;
     display: block;
 }
-[class*="col-"] {
-    float: left;
-    padding: 15px;
+/*Item formatting END*/
+
+/*Carousel formatting*/
+.MultiCarousel { 
+  float: left; 
+  overflow: hidden; 
+  padding: 15px; 
+  width: 100%; 
+  position:relative; 
 }
+
+.MultiCarousel .MultiCarousel-inner {
+  transition: 1s ease all; 
+  float: left; 
+}
+
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+   position:absolute; 
+   border-radius:50%;
+   top:calc(50% - 20px); 
+}
+
+.MultiCarousel .leftLst { 
+  left:0; 
+}
+
+.MultiCarousel .rightLst { 
+  right:0; 
+}
+    
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
+  pointer-events: none; 
+  background:#ccc; 
+}
+/*Carousel formatting END*/
+
 html {
     font-family: "Lucida Sans", sans-serif;
 }
@@ -78,7 +96,7 @@ html {
 .menu li:hover {
     background-color: #0099cc;
 }
-.aside {
+.side-panel {
     background-color: #33b5e5;
     padding: 15px;
     color: #ffffff;
@@ -93,23 +111,5 @@ html {
     font-size: 12px;
     padding: 15px;
 }
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-}
+
