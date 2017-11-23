@@ -7,9 +7,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
 
+
 <link rel="stylesheet" href="filter_css.css" />
 
 <!--Carousel Files -->  
+
 <script src="filterJS.js"></script>
 
 
@@ -42,15 +44,26 @@
 	              </div>
 
 	              <div id="facets-1" class="panel-collapse collapse in">
-
-	                  <li class="list-group-item checkbox checkbox-square">
+	                  
+	                  <li class="list-group-item checkbox">
+	                    <label for="StoreName1">Walgreens <span class="badge">2</span>
 	                    <input type="checkbox" name="StoreName" id="StoreName1" />
-	                    <label for="StoreName1">Walgreens <span class="badge">2</span></label>
+	                    <span class="checkmark"></span>
+	                    </label>
 	                  </li>
 
-	                  <li class="list-group-item checkbox checkbox-square">
-	                    <input type="checkbox" name="StoreName" id="StoreName2" checked="checked"/>
-	                    <label for="StoreName2">Macys <span class="badge">5</span></label>
+	                  <li class="list-group-item checkbox">
+	                    <label for="StoreName2">CVS <span class="badge">2</span>
+						  <input type="checkbox" name="StoreName" id="StoreName2">
+						  <span class="checkmark"></span>
+						</label>
+	                  </li>
+
+	                  <li class="list-group-item checkbox">
+	                    <label for="StoreName3">Target <span class="badge">2</span>
+						  <input type="checkbox" name="StoreName" id="StoreName3">
+						  <span class="checkmark"></span>
+						</label>
 	                  </li>
 	                
 	              </div>
@@ -65,17 +78,25 @@
 
 	              <div id="facets-2" class="panel-collapse collapse in">
 	                
-	                  <li class="list-group-item checkbox checkbox-circle">
+	                  <li class="list-group-item checkbox">
+	                    <label for="BrandName1">Apple <span class="badge">2</span>
 	                    <input type="checkbox" name="BrandName" id="BrandName1" />
-	                    <label for="BrandName1">Sony <span class="badge">5</span></label>
+	                    <span class="checkmark"></span>
+	                    </label>
 	                  </li>
-	                  <li class="list-group-item checkbox checkbox-circle">
+
+	                  <li class="list-group-item checkbox">
+	                    <label for="BrandName2">Sony <span class="badge">2</span>
 	                    <input type="checkbox" name="BrandName" id="BrandName2" />
-	                    <label for="BrandName2">Bose <span class="badge">1</span></label>
+	                    <span class="checkmark"></span>
+	                    </label>
 	                  </li>
-	                  <li class="list-group-item checkbox checkbox-circle">
+
+	                  <li class="list-group-item checkbox">
+	                    <label for="BrandName3">Bose <span class="badge">2</span>
 	                    <input type="checkbox" name="BrandName" id="BrandName3" />
-	                    <label for="BrandName3">Kate Spade <span class="badge">1</span></label>
+	                    <span class="checkmark"></span>
+	                    </label>
 	                  </li>
 
 	              </div>
@@ -89,13 +110,25 @@
 	              </div>
 	              <div id="collapse-2" class="panel-collapse collapse in">
 	                
-	                  <li class="list-group-item checkbox checkbox-circle">
+	                  <li class="list-group-item checkbox">
+	                    <label for="ProductType1">Grocery <span class="badge">2</span>
 	                    <input type="checkbox" name="ProductType" id="ProductType1" />
-	                    <label for="ProductType1">Electronics <span class="badge">1</span></label>
+	                    <span class="checkmark"></span>
+	                    </label>
 	                  </li>
-	                  <li class="list-group-item checkbox checkbox-circle">
+
+	                  <li class="list-group-item checkbox">
+	                    <label for="ProductType2">Electronics <span class="badge">2</span>
 	                    <input type="checkbox" name="ProductType" id="ProductType2" />
-	                    <label for="ProductType2">Grocery <span class="badge">1</span></label>
+	                    <span class="checkmark"></span>
+	                    </label>
+	                  </li>
+
+	                  <li class="list-group-item checkbox">
+	                    <label for="ProductType3">Home <span class="badge">2</span>
+	                    <input type="checkbox" name="ProductType" id="ProductType3" />
+	                    <span class="checkmark"></span>
+	                    </label>
 	                  </li>
 	                
 	              </div>
@@ -105,78 +138,6 @@
 
 
           </div>
-
-          <!--
-
-          <div class="panel-group" id="accordion">
-            
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#facets-1"> Store </a>
-                </h4>
-              </div>
-              <div id="facets-1" class="panel-collapse collapse in">
-                
-                <ul class="list-group">
-
-                  <div class="list-group-item checkbox checkbox-circle">
-                    <input type="checkbox" name="StoreName" id="StoreName1" />
-                    <label for="StoreName1">Walgreens <span class="badge">2</span></label>
-                  </div>
-
-                  <div class="list-group-item checkbox checkbox-circle">
-                    <input type="checkbox" name="StoreName" id="StoreName2" />
-                    <label for="StoreName2">Macys <span class="badge">5</span></label>
-                  </div>
-                </ul>
-              </div>
-            </div>
-
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#facets-2"> Brand</a>
-                </h4>
-              </div>
-              <div id="facets-2" class="panel-collapse collapse in">
-                <ul class="list-group">
-                  <div class="list-group-item checkbox checkbox-circle">
-                    <input type="checkbox" name="created" id="created1" />
-                    <label for="created1">Sony <span class="badge">5</span></label>
-                  </div>
-                  <div class="list-group-item checkbox checkbox-circle">
-                    <input type="checkbox" name="created" id="created2" />
-                    <label for="created2">Bose <span class="badge">1</span></label>
-                  </div>
-                  <div class="list-group-item checkbox checkbox-circle">
-                    <input type="checkbox" name="created" id="created3" />
-                    <label for="created3">Kate Spade <span class="badge">1</span></label>
-                  </div>
-                </ul>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse-2"><span class="glyphicon glyphicon-tag"></span> Product Type</a>
-                </h4>
-              </div>
-              <div id="collapse-2" class="panel-collapse collapse in">
-                <ul class="list-group">
-                  <div class="list-group-item checkbox checkbox-circle">
-                    <input type="checkbox" name="createdBy" id="createdBy1" />
-                    <label for="createdBy1">Electronics <span class="badge">1</span></label>
-                  </div>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-
-      -->
-
-
 
         </div>
       </div>
