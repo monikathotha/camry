@@ -1,4 +1,48 @@
 
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+body{
+
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    /* background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px; */
+}
+
+.global-navigation {
+    background-color: #000000;
+    color: #fff;
+    height: 40px;
+    padding: 0 25px;
+    line-height: 40px;
+}
+
+.header-search {
+    background-color: #fff;
+    color: #000;
+    height: 35px;
+    padding: 0 25px;
+    line-height: 35px;
+}
+
+.global-browse {
+    background-color: #25442d;
+    color: #fff;
+    height: 30px;
+    padding: 0 25px;
+    line-height: 30px;
+}
+
+.brand-header {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 /*Item formatting in Carousel */
 .MultiCarousel .MultiCarousel-inner .item {
    float: left;
@@ -73,37 +117,132 @@
 }
 /*Carousel formatting END*/
 
-html {
-    font-family: "Lucida Sans", sans-serif;
+/* Side panel formatting START*/
+.left-panel {
+margin-left: 10px;
 }
-.header {
-    background-color: #9933cc;
-    color: #ffffff;
-    padding: 15px;
+
+.badge {
+  display: inline;
 }
-.menu ul {
-    list-style-type: none;
+
+#accordion .glyphicon {
+    margin-right:10px; 
+}
+
+.panel-collapse>.list-group .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.panel-collapse>.list-group .list-group-item {
+    border-width: 1px 0;
+}
+
+.panel-collapse>.list-group {
+    margin-bottom: 0;
+}
+
+.panel-collapse .list-group-item {
+    border-radius:0;
+}
+
+.panel-collapse .list-group .list-group {
     margin: 0;
-    padding: 0;
+    margin-top: 10px;
 }
-.menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: #33b5e5;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+.panel-collapse .list-group-item li.list-group-item {
+    margin: 0 -15px;
+    border-top: 1px solid #ddd !important;
+    border-bottom: 0;
+    padding-left: 30px;
 }
-.menu li:hover {
-    background-color: #0099cc;
+
+.panel-collapse .list-group-item li.list-group-item:last-child {
+    padding-bottom: 0;
 }
-.side-panel {
-    background-color: #33b5e5;
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+.panel-collapse div.list-group div.list-group{
+    margin: 0;
 }
+
+.panel-collapse div.list-group .list-group a.list-group-item {
+    border-top: 1px solid #ddd !important;
+    border-bottom: 0;
+    padding-left: 30px;
+}
+
+.panel-collapse .list-group-item li.list-group-item {
+    border-top: 1px solid #DDD !important;
+
+}
+
+
+/* Hide the browser's default checkbox */
+.list-group-item input {
+    position: absolute;
+    opacity: 0;
+}
+
+.panel-collapse .list-group-item {
+-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 18px;
+    width: 18px;
+    border-radius: 4px;
+    border: 1px solid black;
+
+}
+
+/* On mouse-over, add a grey background color */
+.list-group-item:hover .checkmark:hover {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.list-group-item input:checked ~ .checkmark {
+    /*background-color: #2196F3;*/
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.list-group-item input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.list-group-item .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*Side panel formatting END*/
+
+
 .footer {
     background-color: #0099cc;
     color: #ffffff;
@@ -111,5 +250,6 @@ html {
     font-size: 12px;
     padding: 15px;
 }
+
 
 
