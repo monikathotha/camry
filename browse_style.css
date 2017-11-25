@@ -2,6 +2,8 @@
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
 body{
+  margin-right: 0;
+  margin-left: 0;
 
 }
 
@@ -20,22 +22,25 @@ html {
     height: 40px;
     padding: 0 25px;
     line-height: 40px;
+    text-align: center;
 }
 
 .header-search {
-    background-color: #fff;
-    color: #000;
-    height: 35px;
+    background-color: #ffffff;
+    color: #000000;
+    height: 50px;
     padding: 0 25px;
-    line-height: 35px;
+    line-height: 50px;
+    text-align: center;
 }
 
-.global-browse {
+.global-cat-browse {
     background-color: #25442d;
     color: #fff;
-    height: 30px;
+    height: 40px;
     padding: 0 25px;
-    line-height: 30px;
+    line-height: 40px;
+    text-align: center;
 }
 
 .brand-header {
