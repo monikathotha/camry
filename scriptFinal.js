@@ -12,6 +12,7 @@ $(document).ready(function () {
     var itemsMainDiv = ('.MultiCarousel');
     var itemsDiv = ('.MultiCarousel-inner');
     var itemWidth = "";
+    var itemHeight = "";
 
     $('.leftLst, .rightLst').click(function () {
         var condition = $(this).hasClass("leftLst");
@@ -51,22 +52,28 @@ $(document).ready(function () {
             if (bodyWidth >= 1200) {
                 incno = itemsSplit[3];
                 itemWidth = sampwidth / incno;
+                itemHeight = itemWidth;
             }
             else if (bodyWidth >= 992) {
                 incno = itemsSplit[2];
                 itemWidth = sampwidth / incno;
+                itemHeight = itemWidth +50;
             }
             else if (bodyWidth >= 768) {
                 incno = itemsSplit[1];
                 itemWidth = sampwidth / incno;
+                itemHeight = itemWidth +60;
             }
             else {
                 incno = itemsSplit[0];
                 itemWidth = sampwidth / incno;
+                itemHeight = itemWidth+70;
             }
             $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
             $(this).find(itemClass).each(function () {
                 $(this).outerWidth(itemWidth);
+                $(this).outerHeight(itemHeight);
+                //$('.item-img').outerHeight(itemWidth*.75);
             });
 
             $(".leftLst").addClass("over");
