@@ -51,33 +51,70 @@ html {
 /*Item formatting in Carousel */
 .MultiCarousel .MultiCarousel-inner .item {
    float: left;
+   
+   border-style: solid;
+   border-width: 2px;
+   border-color: #ffffff;
+}
+
+.MultiCarousel .MultiCarousel-inner .item .item-inner{
+   border-style: solid;
+   
+   border-color: #c7c7c7;
+   
+
+   border-top-width: 1px;
+   border-left-width: 1px;
+   border-bottom-width: 4px;
+   border-right-width: 4px;
+
+   border-radius: 10px;
+   
+}
+
+.item-img{
+    border-radius: 10px;
+    max-width:156px;
+  max-height:191px; 
+  width: auto;
+  height: auto;
+
+  display: block;
+    margin: auto;
 }
 
 .product-brand {
     color: #555;
-    text-align: center;
+    text-align: left;
     font-size: 12px;
     font-weight: normal;
+    font-style: italic;
+    padding-left: 4px;
 }
 
 .product-name {
     color: #000;
-    text-align: center;
+    text-align: left;
     font-size: 10px;
+    word-wrap: break-word;
+    padding-left: 4px;
+
 }
 
-
-.sale-price {
-    color: #990000;
+.product-price{
     text-align: center;
     font-size: 12px;
+}
+
+.sale-price {
+    color: #990000; 
     font-weight: bold;
 }
 
 .reg-price {
-    color: #555;
-    text-align: center;
-    font-size: 12px;
+    color: #cfcfcf;
+    text-decoration: line-through;
+    padding-left: 4px;
 }
 
 
@@ -88,7 +125,27 @@ html {
 }
 /*Item formatting END*/
 
+/*Pre Carousel Formatting START*/
+.center-panel-ad-block {
+    background-color: #008000;
+    color: #fff;
+    height: 100px;
+    padding: 0 25px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+/*Pre Carousel Formatting END*/
+
 /*Carousel formatting*/
+.store-name {
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 20px
+
+}
+
 .MultiCarousel { 
   float: left; 
   overflow: hidden; 
