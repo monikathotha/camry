@@ -73,7 +73,22 @@ $(document).ready(function () {
             $(this).find(itemClass).each(function () {
                 $(this).outerWidth(itemWidth);
                 $(this).outerHeight(itemHeight);
-                //$('.item-img').outerHeight(itemWidth*.75);
+                //$('.product-info').style.width= (itemWidth-2) + "px";
+                //$('.product-info').style.height= (itemWidth*.25) + "px";
+            });
+
+            var itemImgClass = ('.item-img');
+
+            $(this).find(itemImgClass).each(function () {
+                $(this).css('max-width',itemWidth-20);
+                $(this).css('max-height',itemHeight*.70);
+            });
+
+            var imgDivClass = ('.img-div');
+
+            $(this).find(imgDivClass).each(function () {
+                $(this).css('width',itemWidth-4);
+                $(this).css('height',itemHeight*.70);
             });
 
             $(".leftLst").addClass("over");
