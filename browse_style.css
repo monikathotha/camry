@@ -24,6 +24,17 @@ html {
     line-height: 40px;
     text-align: center;
 }
+.user-icon:before{
+    content: "\f007";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #fff;
+    font-size: 18px;
+    padding-right: 0.5em;
+}
 
 .header-search {
     background-color: #ffffff;
@@ -32,6 +43,24 @@ html {
     padding: 0 25px;
     line-height: 50px;
     text-align: center;
+}
+
+.global-search{
+  height: 30px;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.global-search:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
 }
 
 .global-cat-browse {
@@ -62,7 +91,9 @@ html {
    border-color: #c7c7c7;
    border-width: 1px; 
 }
-
+.img-div{
+    background-color: #F0F0F0;
+}
 .item-img{
   /*
   max-width:260px;
@@ -159,7 +190,8 @@ html {
 .MultiCarousel { 
   float: left; 
   overflow: hidden; 
-  padding: 15px; 
+  padding-top: 15px; 
+
   width: 100%; 
   position:relative; 
 }
@@ -171,22 +203,37 @@ html {
 
 .MultiCarousel .leftLst, .MultiCarousel .rightLst {
    position:absolute; 
-   /* border-radius:50%; */
    top:calc(50% - 20px); 
-   font-size: 34px;
+   font-size: 44px;
+   color: #ffffff;
+   font-family: FontAwesome;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: inherit;
 }
 
 .MultiCarousel .leftLst { 
   left:0; 
+
+}
+
+.leftLst:before {
+    content: "\f053";
+    
 }
 
 .MultiCarousel .rightLst { 
   right:0; 
 }
+
+.rightLst:before {
+    content: "\f054";
+    
+}
     
 .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
   pointer-events: none; 
-  background:#ccc; 
+  color: #ccc; 
 }
 /*Carousel formatting END*/
 

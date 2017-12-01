@@ -87,7 +87,7 @@ $(document).ready(function () {
             var imgDivClass = ('.img-div');
 
             $(this).find(imgDivClass).each(function () {
-                $(this).css('width',itemWidth-4);
+                $(this).css('width',itemWidth-6);
                 $(this).css('height',itemHeight*.70);
             });
 
