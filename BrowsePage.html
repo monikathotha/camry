@@ -10,6 +10,25 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 
+  <!-- For touch slide -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+
+<!-- Bootstrap bootstrap-touch-slider Slider Main Style Sheet -->
+<link href="bootstrap-touch-slider.css" rel="stylesheet" media="all">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+<script src="bootstrap-touch-slider.js"></script>
+
+
+<!--Touch slide end-->
+
+
+
+
   <link rel="stylesheet" href="browse_style.css" />
 
 <!--Carousel Files -->  
@@ -23,46 +42,55 @@
 
 <body>
 
-<!--
-<div class="header">
-  <h1>Trendzz.com</h1>
-</div>
--->
+<!--HEADER Start-->
 
+<div class="container global-navigation ">
+  <div class="row col-xs-3 col-sm-3 col-1">
+    DealsCentral
+  </div>
 
-<div class="col-xs-3 col-sm-3 global-navigation col-1">
-  DealsCentral
-</div>
+  <div class="row col-xs-6 col-sm-6 col-2">
+    Top selling items across retailers
+  </div>
 
-<div class="col-xs-3 col-sm-6 global-navigation col-2">
-  Top selling items across retailers
-</div>
-
-<div class="col-xs-3 col-sm-3 global-navigation col-3">
-  HELP
-  <i class="fa-user user-icon"></i>
+  <div class="row col-xs-3 col-sm-3 col-3">
+    HELP
+    <i class="fa-user user-icon"></i>
+  </div>
 </div>
 
+<!--Search Panel-->
+<div class="container header-search">
+  <div class="row col-xs-3 col-sm-3">
+    Company LOGO
+  </div>
 
-<div class="col-xs-3 col-sm-3 header-search">
-  Company LOGO
+  <div class="row col-xs-6 col-sm-6"> 
+    <div class="search-box-div">
+    
+      <input class="form-control " id="myInput" type="text" placeholder="Search..">
+      
+      <i class="fa-search global-search-icon form-control-feedback"></i>    
+    </div>
+  </div>
+
+  <div class="row col-xs-3 col-sm-3">
+    Login stuff
+  </div> 
+</div>
+<!--END of Search Panel-->
+
+<div class="container header-shops">
+  <div class="row col-xs-12 global-shops-browse">
+    <span>Electronics    Stores    Grocery</span>
+  </div>
 </div>
 
-<div class="col-xs-3 col-sm-6 header-search">
-  <input type="searchBox" name="searchBox global-search">
-  <i class="fa-search global-search-icon"></i>Search Box
-</div>
 
-<div class="col-xs-3 col-sm-3 header-search">
-  Login stuff
-</div>
+<!--Header END-->
 
 
-<div class="col-xs-12 global-cat-browse">
-  <span>Electronics    Stores    Grocery</span>
-</div>
-
-
+<div class="container">
 <div class="row left-panel">
 <div class="col-xs-12 col-sm-1 menu">
 <!--
@@ -176,11 +204,7 @@
 </div>
 
 
-<div class="container center-panel col-xs-12 col-sm-10">
-
-  <div class="row center-panel-ad-block">
-      Some AD...
-  </div>
+<div class="row center-panel col-xs-12 col-sm-10">
   
   <div class="row">
       <div class="MultiCarousel" data-items="2,2.5,3.5,3.5" data-slide="2" id="MultiCarousel"  data-interval="1000">
@@ -299,7 +323,7 @@
                   <div class="item">
                     <div class="item-inner">
                       <div class="img-div">
-                        <img src="Images/1.jpeg" class="img-responsive item-img">
+                        <img src="Images/4.jpeg" class="img-responsive item-img">
                       </div>
                         <div class="product-info">
                           <div class= "product-brand">Ideology</div>
@@ -315,7 +339,7 @@
                   <div class="item">
                     <div class="item-inner">
                       <div class="img-div">
-                        <img src="Images/2.jpeg" class="img-responsive item-img">
+                        <img src="Images/3.jpeg" class="img-responsive item-img">
                       </div>
                         <div class="product-info">
                           <div class= "product-brand">Samsung</div>
@@ -331,7 +355,7 @@
                   <div class="item">
                     <div class="item-inner">
                       <div class="img-div">
-                        <img src="Images/3.jpeg" class="img-responsive item-img">
+                        <img src="Images/2.jpeg" class="img-responsive item-img">
                       </div>
                         <div class="product-info">
                           <div class= "product-brand">LG</div>
@@ -347,7 +371,7 @@
                   <div class="item">
                     <div class="item-inner">
                       <div class="img-div">
-                        <img src="Images/4.jpeg" class="img-responsive item-img">
+                        <img src="Images/1.jpeg" class="img-responsive item-img">
                       </div>
                         <div class="product-info">
                           <div class= "product-brand">HP</div>

@@ -22,6 +22,24 @@ $(document).ready(function () {
             click(1, this)
     });
 
+    $( ".MultiCarousel .MultiCarousel-inner" ).swipe( {
+        /*swipeLeft: function ( event, direction, distance, duration, fingerCount ) {
+            //this.parent( ).carousel( 'next' );
+        },
+        swipeRight: function ( ) {
+           // this.parent( ).carousel( 'prev' );
+        },
+        //threshold: 0 */
+        
+        /*
+        if (direction == 'left') $(this).carousel('next');
+        if (direction == 'right') $(this).carousel('prev');
+
+        },
+        allowPageScroll:"vertical"
+        */
+    } );
+
     ResCarouselSize();
 
 
@@ -73,8 +91,6 @@ $(document).ready(function () {
             $(this).find(itemClass).each(function () {
                 $(this).outerWidth(itemWidth);
                 $(this).outerHeight(itemHeight);
-                //$('.product-info').style.width= (itemWidth-2) + "px";
-                //$('.product-info').style.height= (itemWidth*.25) + "px";
             });
 
             var itemImgClass = ('.item-img');
