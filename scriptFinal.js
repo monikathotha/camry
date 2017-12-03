@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    allowPageScroll:"vertical";
 
 /*Left panel search code*/
     $("#myInput").on("keyup", function() {
@@ -29,9 +30,12 @@ $(document).ready(function () {
         if (direction == 'right') click(0, this);
 
         }
+       
+
     } );
 
     ResCarouselSize();
+
 
 
 
