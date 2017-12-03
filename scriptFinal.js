@@ -22,26 +22,16 @@ $(document).ready(function () {
             click(1, this)
     });
 
-    $( ".MultiCarousel .MultiCarousel-inner" ).swipe( {
-        /*swipeLeft: function ( event, direction, distance, duration, fingerCount ) {
-            //this.parent( ).carousel( 'next' );
-        },
-        swipeRight: function ( ) {
-           // this.parent( ).carousel( 'prev' );
-        },
-        //threshold: 0 */
-        
-        /*
-        if (direction == 'left') $(this).carousel('next');
-        if (direction == 'right') $(this).carousel('prev');
+    $( '.MultiCarousel-inner').swipe( {
+        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+        //var condition = $(this).hasClass("leftLst");
+        if (direction == 'left') click(1, this);
+        if (direction == 'right') click(0, this);
 
-        },
-        allowPageScroll:"vertical"
-        */
+        }
     } );
 
     ResCarouselSize();
-
 
 
 

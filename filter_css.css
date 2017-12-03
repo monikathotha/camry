@@ -1,123 +1,76 @@
-
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
-
-body{
-     margin:50px;
+#item1 {
+  background: #69D2E7;
+  height:100%;
+  width:320px;  
 }
 
-.badge {
-  display: inline;
+#item2 {
+  background: #F38630;
+  height: 100%;
+  width: 320px;
 }
 
-#accordion .glyphicon {
-    margin-right:10px; 
+#item3 {
+  background: #A7DBD8;
+  height: 100%;
+  width: 320px;
 }
 
-.panel-collapse>.list-group .list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
+div.carouselWrap {
+  width: 1036px;
+  background: white;
+  height: 100%;
+  color: white;
+  font-family: "Gill Sans / Gill Sans MT", sans-serif;
+  font-size: 3em;
+  line-height: 568px;
+  text-align: center;
 }
 
-.panel-collapse>.list-group .list-group-item {
-    border-width: 1px 0;
+.animate {
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s;
 }
 
-.panel-collapse>.list-group {
-    margin-bottom: 0;
+div.float--left {
+  float: left;
 }
 
-.panel-collapse .list-group-item {
-    border-radius:0;
+/**
+* Generic boilerplate CSS
+*/
+* { margin: 0px; padding: 0px; }
+body {
+	background: #2e2c35;
+	width: 100%; height: 100%;
 }
-
-.panel-collapse .list-group .list-group {
-    margin: 0;
-    margin-top: 10px;
+div.device {
+	height: 798px; width: 378px;
+	width: 440px; height: 807px;
+	background: url('http://creativeda.sh/sandbox/bounce_menu/img/iphone_black.png') no-repeat center center; 
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	position: absolute; margin: auto;
+	top: 0px; bottom: 100px; left: 0px; right: 0px;
 }
-
-.panel-collapse .list-group-item li.list-group-item {
-    margin: 0 -15px;
-    border-top: 1px solid #ddd !important;
-    border-bottom: 0;
-    padding-left: 30px;
+div.screen { 
+	height: 568px; width: 320px;
+	position: absolute;
+	top: 119px; left: 60px;
+	overflow: hidden;
 }
-
-.panel-collapse .list-group-item li.list-group-item:last-child {
-    padding-bottom: 0;
-}
-
-.panel-collapse div.list-group div.list-group{
-    margin: 0;
-}
-
-.panel-collapse div.list-group .list-group a.list-group-item {
-    border-top: 1px solid #ddd !important;
-    border-bottom: 0;
-    padding-left: 30px;
-}
-
-.panel-collapse .list-group-item li.list-group-item {
-    border-top: 1px solid #DDD !important;
-
-}
-
-
-/* Hide the browser's default checkbox */
-.list-group-item input {
-    position: absolute;
-    opacity: 0;
-}
-
-.panel-collapse .list-group-item {
--webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    height: 18px;
-    width: 18px;
-    border-radius: 4px;
-    border: 1px solid black;
-
-}
-
-/* On mouse-over, add a grey background color */
-.list-group-item:hover .checkmark:hover {
-    background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.list-group-item input:checked ~ .checkmark {
-    /*background-color: #2196F3;*/
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the checkmark when checked */
-.list-group-item input:checked ~ .checkmark:after {
-    display: block;
-}
-
-/* Style the checkmark/indicator */
-.list-group-item .checkmark:after {
-    left: 6px;
-    top: 1px;
-    width: 5px;
-    height: 10px;
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+div.content {
+  height:100%;
+  width:100%;
+	background: #375585;
+	position: absolute;
+	top: 0px; left: 0px;
+	z-index: 300;
+	-webkit-transition: all 250ms ease;
+	   -moz-transition: all 250ms ease;
+	    -ms-transition: all 250ms ease;
+	     -o-transition: all 250ms ease;
+	        transition: all 250ms ease;
 }
