@@ -50,12 +50,48 @@ html {
     text-align: center;
     align-content: center;
 }
+.menu-icon{
+    margin-top: 8px;
+}
+
+.menu-icon-line{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    color: blue;
+    font-size: 4;
+    line-height: 5px;
+}
+
+.menu-icon-text{
+    width: 35px;
+    height: 15px;
+    margin: 6px 0;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    line-height: 10px;
+}
 
 .search-box-div{
-  height: 30px;
+  height: 34px;
   width: calc(100%);
   margin-top: 8px;
-  
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 4px;
+}
+
+.search-input-box{
+  height: 32px;
+  width: calc(85%);
+  margin: 0 2px;
+  border-width: 0px;
+  border-style: none;
+  border-color: #fff;
+  border-radius: 0px;
 }
 
 .global-search-icon{
@@ -76,27 +112,21 @@ html {
 /*Brand Panel Navigation Start************************/
 .header-shops {
     background-color: #25442d;
-    color: #000000;
+    color: #ffffff;
     height: 50px;
     padding: 0 0px;
     line-height: 50px;
     text-align: center;
     align-content: center;
 }
-
-.global-shops-browse {
+.header-shops1 {
     background-color: #25442d;
-    color: #fff;
-    height: 40px;
-    padding: 0 0px;
-    line-height: 40px;
+    color: #ffffff;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
 }
 
-.brand-header {
-    background-color: #000000;
-    color: #ffffff;
-}
 
 /*Brand Navigation End************************/
 
@@ -118,15 +148,10 @@ html {
     background-color: #F0F0F0;
 }
 .item-img{
-  /*
-  max-width:260px;
-  max-height:191px; */
   width: auto;
   height: auto; 
-
-
   display: block; 
-    margin: auto;
+  margin: auto;
 }
 
 .product-info{
