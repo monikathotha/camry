@@ -2,10 +2,27 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+  <!-- For touch slide -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+
+<!-- Bootstrap bootstrap-touch-slider Slider Main Style Sheet -->
+<link href="bootstrap-touch-slider.css" rel="stylesheet" media="all">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+<script src="bootstrap-touch-slider.js"></script>
+
 
 
 <link rel="stylesheet" href="filter_css.css" />
@@ -18,23 +35,48 @@
 <title>Filter Page</title>
 
 </head>
+
 <body>
 
-	<div class="device" ng-app="swipeExample">
-		<div class="screen">
-      
-      <!-- This is the directive part. The key is the snapGrid
-      array, which defines at what points to animate the
-      element to on drag end. -->
-      <div class="content">
-        <div class="carouselWrap" swipe-and-snap snap-locations="[0, -320, -640]">
-          <div id="item1" class="float--left">Slide 1</div>
-          <div id="item2" class="float--left">Slide 2</div>
-          <div id="item3" class="float--left">Slide 3</div>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Mega Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3>Category 1</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Category 2</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Category 3</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
         </div>
       </div>
     </div>
-	</div>
+  </div> 
+</div>
+
+<div style="padding:16px">
+  <h3>Mega Menu (Full-width dropdown in navbar)</h3>
+  <p>Hover over the "Dropdown" link to see the mega menu.</p>
+</div>
 
 </body>
 </html>
