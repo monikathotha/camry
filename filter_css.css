@@ -11,6 +11,19 @@ body {
     background-color: #333;
     font-family: Arial;
 }
+.nav-item{
+    padding: 0;
+    list-style: none;
+}
+.li{
+    display: inline-block;
+    
+}
+
+.nav-sub-item{
+    padding: 0;
+    list-style: none;
+}
 
 .navbar a {
     float: left;
@@ -86,4 +99,12 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
 }
