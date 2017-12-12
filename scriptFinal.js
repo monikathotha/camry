@@ -37,8 +37,6 @@ $(document).ready(function () {
     ResCarouselSize();
 
 
-
-
     $(window).resize(function () {
         ResCarouselSize();
     });
@@ -144,5 +142,21 @@ $(document).ready(function () {
         var slide = $(Parent).attr("data-slide");
         ResCarousel(ell, Parent, slide);
     }
+
+    $( ".menu-cross" ).hide();
+    $( ".menu-mobile" ).hide();
+    $( ".menu-icon" ).click(function() {
+    $( ".menu-mobile" ).slideToggle( "slow", function() {
+    $( ".menu-icon" ).hide();
+    $( ".menu-cross" ).show();
+    });
+    });
+
+    $( ".menu-cross" ).click(function() {
+    $( ".menu-mobile" ).slideToggle( "slow", function() {
+    $( ".menu-cross" ).hide();
+    $( ".menu-icon" ).show();
+    });
+    });
 
 });

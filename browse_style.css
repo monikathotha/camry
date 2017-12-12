@@ -74,6 +74,18 @@ html {
     line-height: 10px;
 }
 
+.menu-cross{
+    /*width: 35px;
+    height: 15px;
+    margin: 6px 0;
+    color: black;
+    text-align: center;*/
+    font-size: 12px;
+    line-height: 10px;
+}
+
+
+
 .search-box-div{
   height: 34px;
   width: calc(100%);
@@ -109,22 +121,12 @@ html {
 }
 /*Global Navigation Start************************/
 
-/*Brand Panel Navigation Start************************/
-.header-shops {
-    background-color: #25442d;
-    color: #ffffff;
-    height: 50px;
-    padding: 0 0px;
-    line-height: 50px;
-    text-align: center;
-    align-content: center;
-}
-
+/*Navigation Bar Desktop Start************************/
 .top-navbar {
-    background-color: mediumseagreen;
+    background-color: #25442d;
     font-family: Arial;
     height: 50px;
-    /*background: #fff; */
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-item{
@@ -138,7 +140,7 @@ html {
     overflow: hidden;
     padding-left: 10px;
     font-weight: bold;
-    font-family: Lato,"Helvetica Neue",Helvetica,Arial,"sans-serif";
+    font-family: 'Roboto', sans-serif;
     letter-spacing: .05em;
     vertical-align: middle;
 }
@@ -148,7 +150,7 @@ html {
     font-size: 12px;
     word-wrap: break-word;
     overflow: hidden;
-    font-family: Lato,"Helvetica Neue",Helvetica,Arial,"sans-serif";
+    font-family: 'Roboto', sans-serif;
     letter-spacing: .05em;
     vertical-align: middle;
 }
@@ -178,21 +180,7 @@ html {
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-/*
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: #aaa;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0 10px;*/
 }
-
-/*
-.top-navbar a:hover, .nav-dropdown:hover .dropbtn {
-    background-color: #25442d;
-}
-*/
 
 /* Drop Animation Start */
 .dropbtn,
@@ -233,7 +221,6 @@ html {
 
 /* Dropdown Animation END */
 
-
 .dropdown-content {
     display: none;
     background-color: #ffffff;
@@ -245,11 +232,8 @@ html {
     border-color: black;
     border-style: solid;
     border-width: 0px 1px 1px 1px;
-    right: 10px;
+    
 }
-
-
-
 
 .nav-dropdown:hover .dropdown-content {
     display: block;
@@ -284,15 +268,22 @@ html {
     clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    .dropdown.column {
-        width: 100%;
-        height: auto;
-    }
+/*Desktop top navigation ENDS*/
+
+/*Mobile menu START*/
+.menu-mobile{
+    display: none;
+    background-color: #ffffff;
+    width: 60%;
+    align-content: center;
+    z-index: 1;
+    overflow: hidden;
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
 }
 
-/*Shop navigation ENDS*/
 
 /*Brand Navigation End************************/
 
@@ -351,8 +342,6 @@ html {
     letter-spacing: .05em;
     height: 35px;
     vertical-align: middle;
-
-
 }
 
 .product-price{
