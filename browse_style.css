@@ -51,17 +51,25 @@ html {
     align-content: center;
 }
 .menu-icon{
-    margin-top: 8px;
+    margin-top: 20px;
 }
 
-.menu-icon-line{
+.menu-icon-line, .menu-icon-line::before,.menu-icon-line::after {
     width: 35px;
     height: 5px;
     background-color: black;
-    margin: 6px 0;
-    color: blue;
-    font-size: 4;
     line-height: 5px;
+    content: '';
+    position: absolute;
+
+}
+.menu-icon-line::before{
+    top:-8px;
+    left: 0px;
+}
+.menu-icon-line::after{
+    bottom:-8px;
+    left: 0px;
 }
 
 .menu-icon-text{

@@ -53,6 +53,7 @@ header{
 .menu a{text-decoration:none; color:#666;}
 .menu a:hover{text-decoration:none; color:#666;}
 
+
 .glyphicon-home{
   color:white; 
   font-size:1.5em; 
@@ -62,3 +63,41 @@ header{
 header{display:inline-block; font-size:12px;}
 span{padding-left:20px;}
 a{color:#336699;}
+
+@import "compass/css3";
+
+@mixin bars($width,$height,$color) {
+  position:relative;
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background: $color;
+  
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: -($height+2px);
+    background: $color;
+  }
+  
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: $height+2px;
+    background: $color;
+  }
+}
+.bars {
+  margin: 1em;
+  @include bars(15px,3px,black);
+}
+
+.three-bar-character:after {
+  content: "\2261";
+}
