@@ -146,12 +146,11 @@ $(document).ready(function () {
     $( ".menu-cross" ).hide();
     $( ".menu-mobile" ).hide();
 
-    $( ".menu-icon" ).click(function() {
-    $( ".menu-mobile" ).slideToggle( "slow", function() {
-    //$( ".menu-icon" ).hide();
-    $( ".menu-cross" ).show();
-    $( ".menu-icon-line::before" ).style.webkitTransform="rotate(45deg)";
-    });
+    $( ".menu-icon" ).click (function() {
+        $( "#menu-line1" ).addClass("rotate1");
+        $( "#menu-line2" ).addClass("hide2");
+        $( "#menu-line3" ).addClass("rotate3");
+        $( ".menu-mobile" ).slideToggle("slow");
     });
 
     $( ".menu-cross" ).click(function() {

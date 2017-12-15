@@ -51,18 +51,40 @@ html {
     align-content: center;
 }
 .menu-icon{
-    margin-top: 20px;
+    margin-top: 8px;
+    width: 35px;
 }
 
-.menu-icon-line, .menu-icon-line::before,.menu-icon-line::after {
+
+.menu-icon-line {
     width: 35px;
     height: 5px;
     background-color: black;
     line-height: 5px;
-    content: '';
-    position: absolute;
+    margin: 6px 0;
+    transition: all 300ms ease-in-out
 
 }
+
+.rotate1 {
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+    margin: 20px 0px;
+}
+
+.hide2 {
+    background-color: transparent;
+    transition: none;
+}
+
+.rotate3 {
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari */
+    transform: rotate(-45deg);
+    margin: -35px 0px;
+}
+/*
 .menu-icon-line::before{
     top:-8px;
     left: 0px;
@@ -70,7 +92,7 @@ html {
 .menu-icon-line::after{
     bottom:-8px;
     left: 0px;
-}
+}*/
 
 .menu-icon-text{
     width: 35px;
