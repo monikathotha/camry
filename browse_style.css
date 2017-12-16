@@ -51,48 +51,46 @@ html {
     align-content: center;
 }
 .menu-icon{
-    margin-top: 8px;
     width: 35px;
+    height: 34px;
+    margin-top: 8px;
+}
+.menu-bars{
+    position: relative;
+    top:13px;
 }
 
-
-.menu-icon-line {
+.menu-icon-line, .menu-icon-line::before, .menu-icon-line::after {
     width: 35px;
     height: 5px;
     background-color: black;
-    line-height: 5px;
-    margin: 6px 0;
-    transition: all 300ms ease-in-out
-
+    transition: all 300ms ease-in-out;
+    position: absolute;
+    content: '';
+    right: 0px;
 }
 
-.rotate1 {
+.menu-icon-line::before {
+    top: -8px;
+}
+.menu-icon-line::after {
+    bottom: -8px;
+}
+.menu-icon:active .menu-bars .menu-icon-line::before {
     -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Safari */
     transform: rotate(45deg);
-    margin: 20px 0px;
+    top:0px;
 }
-
-.hide2 {
-    background-color: transparent;
-    transition: none;
-}
-
-.rotate3 {
+.menu-icon:active .menu-bars .menu-icon-line::after {
     -ms-transform: rotate(-45deg); /* IE 9 */
     -webkit-transform: rotate(-45deg); /* Safari */
     transform: rotate(-45deg);
-    margin: -35px 0px;
+    top: 0px;
 }
-/*
-.menu-icon-line::before{
-    top:-8px;
-    left: 0px;
+.menu-icon:active .menu-bars .menu-icon-line {
+    background-color: transparent;
 }
-.menu-icon-line::after{
-    bottom:-8px;
-    left: 0px;
-}*/
 
 .menu-icon-text{
     width: 35px;
@@ -100,16 +98,6 @@ html {
     margin: 6px 0;
     color: black;
     text-align: center;
-    font-size: 12px;
-    line-height: 10px;
-}
-
-.menu-cross{
-    /*width: 35px;
-    height: 15px;
-    margin: 6px 0;
-    color: black;
-    text-align: center;*/
     font-size: 12px;
     line-height: 10px;
 }

@@ -142,16 +142,17 @@ $(document).ready(function () {
         var slide = $(Parent).attr("data-slide");
         ResCarousel(ell, Parent, slide);
     }
-
+/*
     $( ".menu-cross" ).hide();
     $( ".menu-mobile" ).hide();
-
-    $( ".menu-icon" ).click (function() {
-        $( "#menu-line1" ).addClass("rotate1");
-        $( "#menu-line2" ).addClass("hide2");
-        $( "#menu-line3" ).addClass("rotate3");
-        $( ".menu-mobile" ).slideToggle("slow");
-    });
+*/
+   // $( ".menu-icon" ).click (function() {
+        //$( ".menu-icon-line").toggleClass("rotate1");
+        //$( "#menu-line2" ).addClass("hide2");
+        //$( "#menu-line3" ).addClass("rotate3");
+        //$( ".menu-mobile" ).slideToggle("slow");
+        
+    //});
 
     $( ".menu-cross" ).click(function() {
     $( ".menu-mobile" ).slideToggle( "slow", function() {
