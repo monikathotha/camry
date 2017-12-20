@@ -50,6 +50,7 @@ html {
     text-align: center;
     align-content: center;
 }
+/*Mobile Menu Icon START*/
 .menu-icon{
     width: 35px;
     height: 34px;
@@ -76,19 +77,20 @@ html {
 .menu-icon-line::after {
     bottom: -8px;
 }
-.menu-icon:active .menu-bars .menu-icon-line::before {
+
+.menu-icon.active .menu-bars .menu-icon-line::before {
     -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Safari */
     transform: rotate(45deg);
     top:0px;
 }
-.menu-icon:active .menu-bars .menu-icon-line::after {
+.menu-icon.active .menu-bars .menu-icon-line::after {
     -ms-transform: rotate(-45deg); /* IE 9 */
     -webkit-transform: rotate(-45deg); /* Safari */
     transform: rotate(-45deg);
     top: 0px;
 }
-.menu-icon:active .menu-bars .menu-icon-line {
+.menu-icon.active .menu-bars .menu-icon-line {
     background-color: transparent;
 }
 
@@ -101,8 +103,7 @@ html {
     font-size: 12px;
     line-height: 10px;
 }
-
-
+/*Mobile Menu icon END*/
 
 .search-box-div{
   height: 34px;
@@ -182,7 +183,6 @@ html {
     padding: 0;
     list-style: none;
 }
-
 
 .nav-dropdown {
     float: left;
@@ -289,20 +289,51 @@ html {
 /*Desktop top navigation ENDS*/
 
 /*Mobile menu START*/
+
 .menu-mobile{
     display: none;
     background-color: #ffffff;
-    width: 60%;
+    width: 100%;
+    bottom: 0px;
+    top:100px;
     align-content: center;
     z-index: 1;
-    overflow: hidden;
     position: absolute;
     border-color: black;
     border-style: solid;
-    border-width: 0px 1px 1px 1px;
+    border-width: 1px 1px 1px 1px;
 }
 
+.menu-mobile-active{
+    height: 100%;
+    overflow: hidden;
+}
+.menu-mobile-top-nav{
+    list-style: none;
+    padding-left: 0px;
+}
+.menu-mobile-nav-level1{
+    list-style: none;
+    border-width: 0px 0px 1px 0px;
+    border-color: #ccc;
+    border-style: solid;
+    font-size: 14px;
+}
+.menu-mobile-top-nav .menu-mobile-nav-level1>a{
+    padding: 15px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+}
+.menu-mobile-chevron{
+    right: 15px;
+    position: absolute;
+    margin-top: -8px;
+    top: 50%;
 
+}
+/*Mobile Menu END*/
 /*Brand Navigation End************************/
 
 /*Item formatting in Carousel */
