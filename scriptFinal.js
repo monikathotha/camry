@@ -146,8 +146,20 @@ $(document).ready(function () {
     $( ".menu-icon" ).click (function() {
         $( ".menu-icon" ).toggleClass("active");
         $( "body" ).toggleClass("menu-mobile-active");
-        $( ".menu-mobile" ).slideToggle("fast");
+        $( ".menu-mobile-level1" ).slideToggle("fast");
         
     });
 
+    $( ".menu-mobile-nav-level1" ).click (function() {
+        $( ".menu-mobile-nav-level1>a" ).toggleClass("active");
+        $( ".menu-mobile-level2" ).slideToggle("fast");
+        $( ".menu-mobile-level3" ).slideToggle("fast");
+        
+    });
+
+    $( ".menu-mobile-nav-level2" ).click (function() {
+        $( ".menu-mobile-nav-level2>a" ).toggleClass("active");
+        $( ".menu-mobile-level3" ).slideToggle("fast");
+        
+    });
 });

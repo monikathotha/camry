@@ -152,6 +152,7 @@ html {
     padding: 0;
     list-style: none;
 }
+
 .nav-category{
     color: #000;
     font-size: 14px;
@@ -190,6 +191,7 @@ html {
     text-align: center;
     width: 33.33%;
 }
+
 
 .nav-dropdown .dropbtn {
     font-size: 16px;    
@@ -231,6 +233,7 @@ html {
   opacity: 0;
   z-index: -1;
 }
+
 .top-navbar ul li .dropbtn:hover:after {
   opacity: 1;
   visibility: visible;
@@ -279,6 +282,7 @@ html {
     background-color: #ddd;
 }
 
+
 /* Clear floats after the columns */
 .dropdown-row:after {
     content: "";
@@ -289,8 +293,12 @@ html {
 /*Desktop top navigation ENDS*/
 
 /*Mobile menu START*/
+.menu-mobile-active{ /*To give mobile menu whole height of screen*/
+    height: 100%;
+    overflow: hidden;
+}
 
-.menu-mobile{
+.menu-mobile-level1{
     display: none;
     background-color: #ffffff;
     width: 100%;
@@ -304,12 +312,7 @@ html {
     border-width: 1px 1px 1px 1px;
 }
 
-.menu-mobile-active{
-    height: 100%;
-    overflow: hidden;
-}
-.menu-mobile-top-nav{
-    list-style: none;
+.menu-mobile-ul-style{
     padding-left: 0px;
 }
 .menu-mobile-nav-level1{
@@ -319,7 +322,13 @@ html {
     border-style: solid;
     font-size: 14px;
 }
-.menu-mobile-top-nav .menu-mobile-nav-level1>a{
+.menu-mobile-nav-level1>a.active{
+    background: black;
+    font-weight: bold;
+    color: white;
+}
+
+.menu-mobile-nav-level1>a{
     padding: 15px;
     position: relative;
     text-transform: uppercase;
@@ -332,6 +341,69 @@ html {
     margin-top: -8px;
     top: 50%;
 
+}
+
+.menu-mobile-level2{
+    display: none;
+    background-color: #ffffff;
+    width: 100%;
+    bottom: 0px;
+    top:51px;
+    align-content: center;
+    z-index: 2;
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+}
+
+.menu-mobile-nav-level2{
+    list-style: none;
+    border-width: 0px 0px 1px 0px;
+    border-color: #ccc;
+    border-style: solid;
+    font-size: 14px;
+}
+.menu-mobile-nav-level2>a{
+    padding: 15px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+}
+.menu-mobile-nav-level2>a.active{
+    background: black;
+    font-weight: bold;
+    color: white;
+}
+
+.menu-mobile-level3{
+    display: none;
+    background-color: #ffffff;
+    width: 100%;
+    bottom: 0px;
+    top:51px;
+    align-content: center;
+    z-index: 3;
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+}
+
+.menu-mobile-nav-level3{
+    list-style: none;
+    border-width: 0px 0px 1px 0px;
+    border-color: #ccc;
+    border-style: solid;
+    font-size: 14px;
+}
+.menu-mobile-nav-level3>a{
+    padding: 15px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
 }
 /*Mobile Menu END*/
 /*Brand Navigation End************************/
