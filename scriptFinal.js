@@ -153,7 +153,7 @@ $(document).ready(function () {
     $( ".menu-mobile-nav-level1" ).click (function() {
         $( ".menu-mobile-nav-level1>a" ).toggleClass("active");
         $( ".menu-mobile-level2" ).slideToggle("fast");
-        $( ".menu-mobile-level3" ).slideToggle("fast");
+        //if $( ".menu-mobile-level2" )
         
     });
 

@@ -1,0 +1,76 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "name": "Refrigerator",
+            "description": "24.6 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water - Stainless steel",
+            "brand": "Samsung",
+            "originalPrice": 1599.99,
+            "salePrice": 1279.99,
+            "img_url":"Images/1.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Notebook",
+            "description": "15.6 Touch-Screen Laptop - Intel Core i5 - 8GB Memory - 1TB Hard Drive - HP finish in jet black",
+            "brand": "HP",
+            "originalPrice": 479.99,
+            "salePrice": 450.99,
+            "img_url":"Images/3.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Notebook",
+            "description": "15.6 Touch-Screen Laptop - Intel Core i5 - 8GB Memory - 1TB Hard Drive - HP finish in jet black",
+            "brand": "HP",
+            "originalPrice": 479.99,
+            "salePrice": 450.99,
+            "img_url":"Images/2.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Notebook",
+            "description": "15.6 Touch-Screen Laptop - Intel Core i5 - 8GB Memory - 1TB Hard Drive - HP finish in jet black",
+            "brand": "HP",
+            "originalPrice": 479.99,
+            "salePrice": 450.99,
+            "img_url":"Images/2.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Notebook",
+            "description": "15.6 Touch-Screen Laptop - Intel Core i5 - 8GB Memory - 1TB Hard Drive - HP finish in jet black",
+            "brand": "HP",
+            "originalPrice": 479.99,
+            "salePrice": 450.99,
+            "img_url":"Images/1.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Notebook",
+            "description": "15.6 Touch-Screen Laptop - Intel Core i5 - 8GB Memory - 1TB Hard Drive - HP finish in jet black",
+            "brand": "HP",
+            "originalPrice": 479.99,
+            "salePrice": 450.99,
+            "img_url":"Images/3.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Notebook",
+            "description": "15.6 Touch-Screen Laptop - Intel Core i5 - 8GB Memory - 1TB Hard Drive - HP finish in jet black",
+            "brand": "HP",
+            "originalPrice": 479.99,
+            "salePrice": 450.99,
+            "img_url":"Images/2.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Notebook",
+            "description": "15.6 Touch-Screen Laptop - Intel Core i5 - 8GB Memory - 1TB Hard Drive - HP finish in jet black",
+            "brand": "HP",
+            "originalPrice": 479.99,
+            "salePrice": 450.99,
+            "img_url":"Images/3.jpeg"
+        }
+    ]
+}

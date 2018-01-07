@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.get("http://localhost:8081/product", function(data, status){
+           alert("Data: " + JSON.stringify(data) + "\nStatus: " + status);
+        });
+    });
+    
+
+});
+//node dealserver.js
+</script>
+</head>
+<body>
+
+<button>Submit</button>
+<div></div>
+
+</body>
+</html>

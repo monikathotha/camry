@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+      
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      
+      
+        <!-- For touch slide -->
+      
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+      
+        <!-- Bootstrap bootstrap-touch-slider Slider Main Style Sheet -->
+        <link href="bootstrap-touch-slider.css" rel="stylesheet" media="all">
+      
+        <!--Animation -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+        <script src="bootstrap-touch-slider.js"></script>
+      
+      
+        <!--Touch slide end-->
+      
+      
+      
+      
+        <link rel="stylesheet" href="browse_style.css" />
+      
+        <!--Carousel Files -->
+        <script src="scriptFinal.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<link rel="stylesheet" href="browse_style.css" />
+      
+</head>
+
+<body>
+
+<div class="row center-panel col-xs-12 col-sm-10">
+<div ng-app="myApp" ng-controller="customersCtrl">
+    <div class="row">
+        <div class="MultiCarousel" data-items="2,2.5,3.5,3.5" data-slide="2" id="MultiCarousel" data-interval="1000">
+          <div class="store-name">BestBuy </div>
+          <div class="MultiCarousel-inner">
+
+                <div ng-repeat="x in myData" class="item">
+                    <div class="item-inner">
+                    <div class="img-div">
+                        <img ng-src= "{{x.img_url}}" class="img-responsive item-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">{{x.brand}}</div>
+                        <div class="product-name">{{x.name}}</div>
+                        <div class="product-price">
+                        <span class="sale-price">${{x.salePrice}} </span>
+                        <span class="reg-price">${{x.originalPrice}}</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            <i class="fa fa-chevron-left leftLst aria-hidden=" true ""></i>
+            <span class="sr-only">Next</span>
+            <i class="fa fa-chevron-right rightLst"></i>
+        </div>
+    </div>
+     
+
+</div>
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+  $http.get("http://localhost:8081/product").then(function (response) {
+      $scope.myData = response.data.product;
+  });
+});
+</script>
+
+</body>
+</html>
