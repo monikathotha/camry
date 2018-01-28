@@ -1,14 +1,41 @@
+
+var app = angular.module('carouselApp', []);
+
+app.controller('productsCtrl', productListAPI);
+
+function productListAPI($scope, $http) {
+    $scope.currentTime = Date();
+    $http.get("http://localhost:8081/product")
+    .then(function (response) {
+        $scope.myData = response.data.product;
+    });
+}
+/*
+app.controller('productsCtrl', function($scope, $http) {
+    $http.get("http://localhost:8081/product").then(function (response) {
+        $scope.myData = response.data.product;
+    });
+});
+*/
+
+
+
+
 $(document).ready(function () {
     allowPageScroll:"vertical";
 
-/*Left panel search code*/
+    /*Angular script*/
+    
+    /*angular end*/
+
+/*Left panel search code
     $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $("#myList li").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
     });
-
+*/
 
     var itemsMainDiv = ('.MultiCarousel');
     var itemsDiv = ('.MultiCarousel-inner');
@@ -18,16 +45,16 @@ $(document).ready(function () {
     $('.leftLst, .rightLst').click(function () {
         var condition = $(this).hasClass("leftLst");
         if (condition)
-            click(0, this);
+            carouselClick(0, this);
         else
-            click(1, this)
+            carouselClick(1, this)
     });
 
     $( '.MultiCarousel-inner').swipe( {
         swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
         //var condition = $(this).hasClass("leftLst");
-        if (direction == 'left') click(1, this);
-        if (direction == 'right') click(0, this);
+        if (direction == 'left') carouselClick(1, this);
+        if (direction == 'right') carouselClick(0, this);
 
         }
        
@@ -137,7 +164,7 @@ $(document).ready(function () {
     }
 
     //It is used to get some elements from btn
-    function click(ell, ee) {
+    function carouselClick(ell, ee) {
         var Parent = "#" + $(ee).parent().attr("id");
         var slide = $(Parent).attr("data-slide");
         ResCarousel(ell, Parent, slide);

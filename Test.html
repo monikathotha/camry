@@ -2,23 +2,52 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $.get("http://localhost:8081/product", function(data, status){
-           alert("Data: " + JSON.stringify(data) + "\nStatus: " + status);
-        });
-    });
-    
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="test.js"></script>
 
-});
-//node dealserver.js
-</script>
 </head>
 <body>
+<div ng-app="calcApp" ng-controller="calcCtrl">
+    <div>
+    <input ng-model="text1"></input>
+    <span> {{operator}}</span>
+    <input ng-model="text2"></input>
+    <button ng-click="getResult()">=</button>
+    <span>{{result}}</span>
+    </div>
 
-<button>Submit</button>
-<div></div>
+    <div>
+    <button ng-click="operatorClick('+')">+</button>
+    <button ng-click="operatorClick('-')">-</button>
+    <button ng-click="operatorClick('*')">*</button>
+    <button ng-click="operatorClick('/')">/</button>
+    </div>
+</br>
+</br>
+
+    <div ng-app="calcApp" ng-controller="TodoCtrl">
+        <div>
+            Add a Todo: </br>
+            <input ng-model="inputTodo">
+            <button ng-click="addTodo()">Add</button>
+            </br>
+            <p>Your Todos:</p>
+            <button ng-click="editClick()">{{editText}}</button>
+        </div>
+        <div ng-repeat="x in myTodoList">
+            <p ng-show="!editState">
+                <span>{{$index+1}}</span>
+                <span>{{x.TodoItem}}</span>
+                <button ng-click="deleteTodo($index)"> Delete</button>
+            </p>
+            <p ng-show="editState">
+                    <span>{{$index+1}}</span>
+                    <input ng-value="x.TodoItem" ng-model="x.TodoItem"></input>
+                    <button ng-click="deleteTodo($index)"> Delete</button>
+                </p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
